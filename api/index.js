@@ -101,10 +101,6 @@ function shutdown(signal) {
   process.exit(1);
 }
 
-process.on('SIGTERM', () => shutdown('SIGTERM'));
-process.on('SIGINT', () => shutdown('SIGINT'));
-
-
-server.listen({
+module.exports = app;
   port: 8001,
 });
