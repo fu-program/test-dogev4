@@ -102,5 +102,4 @@ function shutdown(signal) {
 }
 
 module.exports = app;
-  port: 8001,
 });
