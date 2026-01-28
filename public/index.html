@@ -1,1 +1,64 @@
-aa
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proxy Active</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="grid">
+            <div class="card" onclick="location.href='/service/hvtrs8%2F%2Fwww.y独立utube.cｏm%2F'">
+                <img src="https://www.google.com/s2/favicons?sz=64&domain=youtube.com" alt="">
+                <span>YouTube</span>
+            </div>
+            <div class="card" onclick="location.href='/service/hvtrs8%2F%2Fwww.tikｔok.cｏm%2F'">
+                <img src="https://www.google.com/s2/favicons?sz=64&domain=tiktok.com" alt="">
+                <span>TikTok</span>
+            </div>
+            <div class="card" onclick="location.href='/service/hvtrs8%2F%2Fwww.twｉtch.tv%2F'">
+                <img src="https://www.google.com/s2/favicons?sz=64&domain=twitch.tv" alt="">
+                <span>Twitch</span>
+            </div>
+            <div class="card" onclick="location.href='/service/hvtrs8%2F%2Fwww.gｏogle.cｏm%2F'">
+                <img src="https://www.google.com/s2/favicons?sz=64&domain=google.com" alt="">
+                <span>Google</span>
+            </div>
+        </div>
+
+        <form id="uv-form">
+            <input id="uv-address" type="text" placeholder="リンクを放つ">
+        </form>
+
+        <div class="status-box" id="status-box">
+            Proxy Active. Time:<br>
+            <span id="current-time"></span>
+        </div>
+    </div>
+
+    <script src="uv/uv.bundle.js"></script>
+    <script src="uv/uv.config.js"></script>
+    <script src="index.js"></script>
+    
+    <script>
+        // 時計の更新
+        function updateTime() {
+            const now = new Date();
+            const options = { 
+                weekday: 'long', 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric', 
+                hour: '2-digit', 
+                minute: '2-digit', 
+                second: '2-digit',
+                hour12: true 
+            };
+            document.getElementById('current-time').innerText = now.toLocaleString('en-US', options) + " JST";
+        }
+        setInterval(updateTime, 1000);
+        updateTime();
+    </script>
+</body>
+</html>
